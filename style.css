@@ -26,6 +26,7 @@ nav {
 }
 
 .logo img {
+    margin-top: 1vh;
     width: 80px;
 }
 
@@ -154,6 +155,9 @@ nav {
 .project-item img {
     width: 100%;
     border-radius: 18px 18px 0 0;
+}
+.img{
+    width: 20vw;
 }
 
 .project-title {
