@@ -161,13 +161,18 @@ nav {
     width: 20vw;
 }
 
-.project-title {
+.projects-title {
     padding: 15px;
 }
 
-.project-title h3 {
+.projects-title h3 {
     color: #fff;
 }
+
+.m-7{
+    margin-top: 27vh;
+}
+
 
 .heading-experience {
     background: var(--Blue-Gradient,

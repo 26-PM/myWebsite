@@ -13,90 +13,95 @@
 </head>
 
 <body>
-    <div class="loco" data-scroll-container >
-    <header>
-        <nav>
-            <div class="logo ">
-                <img src="images/logo.jpg" alt="pm logo">
+    <div class="loco" data-scroll-container>
+        <header>
+            <nav>
+                <div class="logo ">
+                    <img src="https://th.bing.com/th/id/OIG2..1gyIpaIcVt597GhILaq?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="pm logo">
+                </div>
+                <div class="navbar">
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#">Experience </a></div>
+                    <div><a href="#contact">Contact </a></div>
+                </div>
+            </nav>
+        </header>
+        <section class="container about" data-scroll>
+            <div data-scroll data-scroll-speed="2" class="avatar">
+                <img src="images/avatar.png" alt="pm avatar ">
             </div>
-            <div class="navbar">
-                <div><a href="#">Home</a></div>
-                <div><a href="#projects">Projects</a></div>
-                <div><a href="#">Experience </a></div>
-                <div><a href="#contact">Contact </a></div>
-            </div>
-        </nav>
-    </header>
-    <section class="container about" data-scroll>
-        <div data-scroll data-scroll-speed="10" class="avatar">
-            <img src="images/avatar.png" alt="pm avatar ">
-        </div>
-        <div class="about-text">
-            <h1>I <span>code</span><br>and listen to <span>music</span>!</h1>
-            <p>I am a seasoned full-stack software engineer with over 2 years of
-                professional experience, specializing in frontend development. My
-                expertise lies in crafting robust and scalable web-apps.</p>
-            <div class="about-btn">
-                <button class="btn-primary ">Get in Touch</button>
-                <button class="btn-secondary ">Get in Touch</button>
-            </div>
-        </div>
-    </section>
-    <section class="container experience-with" data-scroll>
-        <h2>Experience With </h2>
-        <div data-scroll data-scroll-speed="5" data-scroll-direction="horizontal" class="experience-with-lang">
-            <div><img src="images/html5.png" alt="html logo" /></div>
-            <div><img src="images/css3.png" alt="html logo" /></div>
-            <div><img src="images/nodejs.png" alt="html logo" /></div>
-            <div><img src="images/reactjs.png" alt="html logo" /></div>
-            <div><img src="images/javascript.png" alt="html logo" /></div>
-        </div>
-    </section>
-    <!-- PROJECTS -->
-    <section class="container" id="projects" data-scroll>
-        <h2 class="primary-heading heading-projects ">Projects</h2>
-        <div class="projects">
-            <div data-scroll data-scroll-speed="5" data-scroll-direction="horizontal" class=" project-item ">
-                <a href="https://26-pm.github.io/play/">
-                    <div class="img"><img src="images/play.png" alt="play"></div>
-                </a>
-                <div class="projects-title">
-                    <p>Click here to visit.</p>
-                    <h3>Play with Text</h3>
+            <div class="about-text">
+                <h1>I <span>code</span><br>and listen to <span>music</span>!</h1>
+                <p>I am a seasoned full-stack software engineer with over 2 years of
+                    professional experience, specializing in frontend development. My
+                    expertise lies in crafting robust and scalable web-apps.</p>
+                <div class="about-btn">
+                    <button data-scroll data-scroll-speed="1" data-scroll-direction="horizontal"
+                        class="btn-primary ">Get in Touch</button>
+                    <a href="#projects"><button data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal"
+                            class="btn-secondary ">Projects</button></a>
                 </div>
             </div>
-            <div data-scroll data-scroll-speed="10" data-scroll-direction="vertical" class=" project-item ">
-                <a href="https://26-pm.github.io/currencyConverter/">
-                    <div class="img"><img src="images/currency.jpg" alt="currency converter"></div>
-                </a>
-                <div class="projects-title">
-                    <p>Click here to visit.</p>
-                    <h3>Currency Converter</h3>
+        </section>
+        <section class="container experience-with" data-scroll>
+            <h2>Experience With </h2>
+            <div class="experience-with-lang">
+                <div data-scroll data-scroll-speed="5" data-scroll-direction="horizontal"><img src="images/html5.png"
+                        alt="html logo" /></div>
+                <div data-scroll data-scroll-speed="5" data-scroll-direction="horizontal"><img src="images/css3.png"
+                        alt="html logo" /></div>
+                <div><img src="images/nodejs.png" alt="html logo" /></div>
+                <div data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal"><img src="images/reactjs.png"
+                        alt="html logo" /></div>
+                <div data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal"><img
+                        src="images/javascript.png" alt="html logo" /></div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="container" id="projects" data-scroll>
+            <h2 class="primary-heading heading-projects ">Projects</h2>
+            <div class="projects">
+                <div data-scroll data-scroll-speed="10" data-scroll-direction="vertical" class=" project-item ">
+                    <a href="https://26-pm.github.io/play/">
+                        <div class="img"><img src="images/play.png" alt="play"></div>
+                    </a>
+                    <div class="projects-title">
+                        <p>Click here to visit.</p>
+                        <h3>Play with Text</h3>
+                    </div>
+                </div>
+                <div data-scroll data-scroll-speed="10" data-scroll-direction="vertical" class=" project-item ">
+                    <a href="https://26-pm.github.io/currencyConverter/">
+                        <div class="img"><img src="images/currency.jpg" alt="currency converter"></div>
+                    </a>
+                    <div class="projects-title">
+                        <p>Click here to visit.</p>
+                        <h3>Currency Converter</h3>
+                    </div>
+                </div>
+                <div data-scroll data-scroll-speed="10" data-scroll-direction="vertical" class=" project-item ">
+                    <a href="https://26-pm.github.io/Netflix/">
+                        <div class="img"><img src="https://clipground.com/images/logo-de-netflix-clipart-2.png"
+                                alt="netflix"></div>
+                    </a>
+                    <div class="projects-title">
+                        <p>Click here to visit.</p>
+                        <h3>Netflix</h3>
+                    </div>
+                </div>
+                <div data-scroll data-scroll-speed="10" data-scroll-direction="vertical" class=" project-item ">
+                    <a href="https://26-pm.github.io/spotify/">
+                        <div class="img"><img src="https://cdn.pixabay.com/photo/2016/10/22/00/15/spotify-1759471_1280.jpg" alt="spotify"></div>
+                    </a>
+                    <div class="projects-title">
+                        <p>Click here to visit.</p>
+                        <h3>Spotify</h3>
+                    </div>
                 </div>
             </div>
-            <div data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" class=" project-item ">
-                <a href="https://26-pm.github.io/Netflix/">
-                    <div class="img"><img src="https://clipground.com/images/logo-de-netflix-clipart-2.png"
-                            alt="netflix"></div>
-                </a>
-                <div class="projects-title">
-                    <p>Click here to visit.</p>
-                    <h3>Netflix</h3>
-                </div>
-            </div>
-            <div data-scroll data-scroll-speed="-10" data-scroll-direction="horizontal" class=" project-item ">
-                <a href="https://26-pm.github.io/spotify/">
-                    <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2880px-Spotify_logo_with_text.svg.png"
-                            alt="spotify"></div>
-                </a>
-                <div class="projects-title">
-                    <p>Click here to visit.</p>
-                    <h3>Spotify</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <section class="container">
+        </section>
+        <!-- <section class="container">
         <h2 class="primary-heading heading-experience">EXPERIENCE</h2>
         <div class="experiences">
             <div class="experience-item">
@@ -145,34 +150,34 @@
             </div>
         </div>
     </section> -->
-    <footer id="contact" data-scroll>
-        <div class="container">
-            <h2>Contact</h2>
-            <p>
-                Seasoned Full Stack Software Engineer with over 2 years of hands-on
-                experience in designing and implementing robust, scalable, and
-                innovative web solutions. Adept at leveraging a comprehensive skill
-                set encompassing front-end and back-end technologies.
-            </p>
-            <div class="email-container">
-                <div><img src="images/email-icon.svg" alt="email" /></div>
-                <div>xyz@gmail.com</div>
+        <footer id="contact" data-scroll>
+            <div class="container">
+                <h2>Contact</h2>
+                <p>
+                    Seasoned Full Stack Software Engineer with over 2 years of hands-on
+                    experience in designing and implementing robust, scalable, and
+                    innovative web solutions. Adept at leveraging a comprehensive skill
+                    set encompassing front-end and back-end technologies.
+                </p>
+                <div class="email-container">
+                    <div><img src="images/email-icon.svg" alt="email" /></div>
+                    <div>pm26work@gmail.com</div>
+                </div>
+                <div class="social-links">
+                    <div><img src="images/x.png" alt="twitter" /></div>
+                    <div><img src="images/instagram.svg" alt="twitter" /></div>
+                    <div><img src="images/youtube.png" alt="twitter" /></div>
+                </div>
             </div>
-            <div class="social-links">
-                <div><img src="images/x.png" alt="twitter" /></div>
-                <div><img src="images/instagram.svg" alt="twitter" /></div>
-                <div><img src="images/youtube.png" alt="twitter" /></div>
-            </div>
-        </div>
-    </footer>
-    <!-- locomotive -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script>
-        const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-        });
-    </script>
+        </footer>
+        <!-- locomotive -->
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script>
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+        </script>
     </div>
 </body>
 
