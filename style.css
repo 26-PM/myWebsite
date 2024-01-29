@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     /* width: 1100px; */
-    width:500vw;
+    width:100vw;
     margin: 0 auto;
 }
 
@@ -108,6 +108,7 @@ nav {
     border-radius: 50px;
     font-size: 22px;
     color: #fff;
+    margin-left: 40px;
 }
 
 .experience-with {
@@ -208,11 +209,12 @@ nav {
 }
 
 footer {
-    width: 500vw;
+    width: 100vw;
     background-color: #191919;
 }
 
 footer h2 {
+    padding-top: 2vh;
     color: #fff;
     font-size: 24px;
     margin-bottom: 20px;
@@ -220,11 +222,14 @@ footer h2 {
 
 footer p {
     font-size: 15px;
+    padding-left: 2vh;
+    padding-right:2vh
 }
 
 .email-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -234,9 +239,14 @@ footer p {
 
 .social-links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
 }
 
 .social-links img {
     margin-right: 20px;
+    margin-left: 20px;
+    margin: 10px;
+    
 }

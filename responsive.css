@@ -1,0 +1,83 @@
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    .logo img {
+        /* margin-top: 1vh; */
+        width: 80px;
+        margin: 2vw;
+    }
+    .navbar div:first-child {
+        display: none;
+    }
+    .container {
+        width: 100vw;
+        margin: 0 auto;
+        /* padding: 80px 20px; */
+        padding: 0;
+    }
+    .avatar img {
+        width: 251px;
+        padding-top:2vh;
+    }
+    .about-text{
+        width:100vw;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .experience-with-lang {
+        display: flex;
+        width: 80vw;
+        margin: 50px auto;
+        justify-content: space-between;
+    }
+    .btn-secondary {
+        margin-top: 2vh;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* gap:2vh; */
+    }
+    
+    .project-item {
+        margin: 0px;
+        width:40vw;
+        margin:3vw;
+    }
+    
+    .project-item img {
+        width: 100%;
+    }
+    .img{
+        margin: 10vw;
+    }
+    
+    .projects-title {
+        padding: 15px;
+    }
+    
+    .projects-title h3 {
+        color: #fff;
+    }
+    footer .container h2{
+        margin-left: 35vw;
+    }
+    footer .container p{
+        margin-left: 2vw;
+    }
+    .email-container {
+        margin-top: 40px;
+    }
+    
+    .email-container img {
+        margin-left: 2vw;
+    }
+    
+    .social-links {
+        display: flex;
+        margin-top: 40px;
+    }
+}
