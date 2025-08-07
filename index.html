@@ -4,17 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PM </title>
+    <title>PM - Full Stack Software Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full Stack Software Engineer specializing in frontend development with expertise in React, Node.js, and modern web technologies">
+    <meta name="keywords" content="software engineer, full stack developer, web development, React, Node.js, JavaScript">
+    <meta name="author" content="PM">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="PM - Full Stack Software Engineer">
+    <meta property="og:description" content="Portfolio showcasing full stack development projects and expertise">
+    <meta property="og:image" content="images/avatar.png">
+    <meta property="og:url" content="https://26-pm.github.io">
+    <meta property="og:type" content="website">
+    
+    <!-- Theme Color for Browser -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/main.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css ">
-    <!-- Loomotive JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="apple-touch-icon" href="images/main.ico">
+    
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="images/temp.png" alt="Loading...">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <div class="loco" data-scroll-container>
         <header>
             <nav>
@@ -220,19 +263,66 @@
                     <div>pm26new@gmail.com</div>
                 </div>
                 <div class="social-links">
-                    <div><img src="images/x.png" alt="twitter" /></div>
-                    <div><img src="images/instagram.svg" alt="twitter" /></div>
-                    <div><img src="images/youtube.png" alt="twitter" /></div>
+                    <a href="https://twitter.com/your-handle" target="_blank" rel="noopener noreferrer">
+                        <div><img src="images/x.png" alt="Twitter/X" /></div>
+                    </a>
+                    <a href="https://instagram.com/your-handle" target="_blank" rel="noopener noreferrer">
+                        <div><img src="images/instagram.svg" alt="Instagram" /></div>
+                    </a>
+                    <a href="https://youtube.com/your-channel" target="_blank" rel="noopener noreferrer">
+                        <div><img src="images/youtube.png" alt="YouTube" /></div>
+                    </a>
+                    <a href="https://github.com/26-PM" target="_blank" rel="noopener noreferrer">
+                        <div><i class="fab fa-github"></i></div>
+                    </a>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <div><i class="fab fa-linkedin"></i></div>
+                    </a>
                 </div>
             </div>
         </footer>
         <!-- locomotive -->
         <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
         <script>
+            // Initialize Locomotive Scroll
             const scroll = new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
-                smooth: true
+                smooth: true,
+                smartphone: {
+                    smooth: true
+                },
+                tablet: {
+                    smooth: true
+                }
             });
+
+            // Loading Animation
+            window.addEventListener('load', () => {
+                document.querySelector('.loader').style.display = 'none';
+            });
+
+            // Scroll to Top Button
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.style.display = 'block';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Update theme color based on user preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000000');
+            }
         </script>
     </div>
 </body>
