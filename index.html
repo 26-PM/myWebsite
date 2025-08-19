@@ -262,7 +262,22 @@
         <script>
             const scroll = new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
-                smooth: true
+                smooth: true,
+                smoothMobile: true,
+                multiplier: 1,
+                lerp: 0.1,
+                getDirection: true,
+                reloadOnContextChange: true,
+                touchMultiplier: 2
+            });
+
+            // Handle window load and resize events
+            window.addEventListener('load', () => {
+                scroll.update();
+            });
+
+            window.addEventListener('resize', () => {
+                scroll.update();
             });
         </script>
     </div>
