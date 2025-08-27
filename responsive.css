@@ -1,97 +1,143 @@
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 60px 20px;
+    }
+    
+    .about {
+        padding: 40px 30px;
+    }
+    
+    .experience-with-lang {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 600px) {
-    .logo img {
-        /* margin-top: 1vh; */
-        width: 80px;
-        margin: 2vw;
-    }
-    .navbar div:first-child {
-        display: none;
-    }
-    .container {
-        width: 100vw;
-        margin: 0 auto;
-        /* padding: 80px 20px; */
-        padding: 0;
-    }
-    .avatar img {
-        width: 251px;
-        padding-top:2vh;
-    }
-    .navbar {
-        display: flex;
-        align-items: center;
+    nav {
+        padding: 0 1rem;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 5vw;
-        margin-right: 0vw;
+        gap: 1rem;
     }
-    .navbar div:last-child{
-        margin-right: 3vw;
+    
+    .logo {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .navbar {
+        order: 2;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .navbar div {
-        padding: 0vh;
-    }
-    .about-text{
-        width:100vw;
-        padding-left: 2vh;
-        padding-right: 2vh;
-    }
-    .experience-with-lang {
-        display: flex;
-        width: 80vw;
-        margin: 50px auto;
-        justify-content: space-between;
-    }
-    .btn-secondary {
-        margin-top: 2vh;
-        border: 1px solid #fff;
-        margin-right: 20px;
-        margin-left: 0px;
-    }
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        /* gap:2vh; */
+        padding: 0.75rem 1rem;
     }
     
-    .project-item {
-        margin: 0px;
-        width:40vw;
-        margin:3vw;
+    .navbar a {
+        font-size: 14px;
     }
     
-    .project-item img {
+    .container {
         width: 100%;
+        padding: 40px 15px;
     }
-    .img{
-        margin: 10vw;
+    
+    .about {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .about-text {
+        padding: 0 10px;
+    }
+    
+    .about-btn {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .experience-with {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .experience-with-lang {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .experience-with-lang div {
+        padding: 12px;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 40px 0;
+        padding: 0 10px;
+    }
+    
+    .project-item .img {
+        height: 180px;
     }
     
     .projects-title {
-        padding: 15px;
+        padding: 20px;
     }
     
-    .projects-title h3 {
-        color: #fff;
-    }
-    footer .container h2{
-        margin-left: 35vw;
-    }
-    footer .container p{
-        margin-left: 2vw;
-    }
-    .email-container {
-        margin-top: 40px;
+    .primary-heading {
+        font-size: 32px;
+        margin-bottom: 30px;
     }
     
-    .email-container img {
-        margin-left: 2vw;
+    footer {
+        margin-top: 60px;
+    }
+    
+    footer h2 {
+        font-size: 24px;
+        padding-top: 3vh;
+    }
+    
+    footer p {
+        font-size: 14px;
+        padding: 0 2vh 2vh;
     }
     
     .social-links {
-        display: flex;
-        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .social-links img {
+        margin: 5px;
+        padding: 10px;
     }
 }
